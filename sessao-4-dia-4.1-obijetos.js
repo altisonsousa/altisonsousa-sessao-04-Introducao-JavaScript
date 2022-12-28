@@ -6,6 +6,7 @@ let pessoa = {
     idade: 49,
     sexo: 'masculino',
     estadoCivil: 'casado',
+    esposa: 'celia',
     condição: 'Fé',
     comidas: ['biscoito', 'chocolate'],
     filhos: {

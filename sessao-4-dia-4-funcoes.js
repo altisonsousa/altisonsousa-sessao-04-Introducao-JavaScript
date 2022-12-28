@@ -30,8 +30,6 @@ function feiar(decremento) {
 
 
 // - Crie uma função para dar boas vindas
-
-
 function boasVindas(nome) {
   return 'Boas vindas, ' + nome;
 }
@@ -41,10 +39,9 @@ console.log(resposta);
 
 
 // - Crie uma função para somar dois números
+
 function somaNumeros(nam1, nam2) {
-  let resultado = 0;
-  resultado = (nam1 + nam2);
-  return resultado;
+    return nam1 + nam2;
 }
 console.log(somaNumeros(2, 15));
 console.log(somaNumeros(2, 8));
@@ -62,13 +59,13 @@ console.log(somaNumeros(2, 8));
 console.log(somaNumeros(7, 70));
 console.log(somaNumeros(2, 540));
 
+
 // - Crie uma função que calcule os números de um jogo de volei 
 // Para vitoria, vale 2 pontos
 // Para empate vale 1 ponto
+
 function calculeNumeros(vitoria, empate) {
-  let resultado = 0;
-  resultado = (vitoria * 2) + empate;
-  return resultado;
+  return (vitoria * 2) + empate;
 }
 console.log(calculeNumeros(2, 3));
 console.log(calculeNumeros(10, 3));
