@@ -19,7 +19,7 @@ console.log('O livro favoriteo de ' + leitor.nome + ' ' + leitor.sobrenome  + 's
 
 // - Adicione um novo livro favorito na chave livrosFavoritos, que é um array. Atribua a essa chave um objeto contendo as seguintes informações:
 
-leitor.livrosFavoritos.push({;
+//leitor.livrosFavoritos.push({;
 
   // - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: “Julia tem <quantidade> livros favoritos”, onde “<quantidade>” é um número gerado automaticamente pelo seu código.
   

@@ -1,5 +1,16 @@
 //  ***  Funções  *** //
 
+function calcQuadrilhatero(base, altura) {
+  return base * 2 + altura * 2;
+}
+  console.log(calcQuadrilhatero(4,4));
+
+
+function sum(numb1, numb2) {
+  return numb1 + numb2;
+}
+console.log(sum(8, 2) + 15);
+
 let statusCar = 'Desligado';
 let aceleracao = 0;
 rotacaoVolane = 0;

@@ -25,14 +25,19 @@ for (let position in food) {
     console.log(position);
   };
   
+let iterable = [10, 20, 30];
+ for (const iterator of iterable) {
+  console.log(iterator);
+}
+
   //  Se percorrermos um objeto, também teremos o mesmo resultado. O for/in irá percorrer a propriedade declarada, e não o seu valor em si.
 
   //  Já o for/of percorre os elementos dos objetos iteráveis através dos seus respectivos valores, e não dos índices como o for/in. Vejamos o exemplo:
 
   let food2 = ['hamburguer', 'bife', 'acarajé'];
-for (let value of food) {
+for (let value of food2) {
   console.log(value);
-};
+}
 
 //  Para fixar
 //  Usando o objeto abaixo, utilize for/in e imprima no console a mensagem 'Olá xxxxx' para cada nome, substituindo o xxxxx pelo nome em questão.
