@@ -12,7 +12,7 @@ function calculaQuadrilhateo(base, altura) {
 }
 console.log(calculaQuadrilhateo(10, 10));
 
-///////////////////////////////////////
+/////////////////////////////////////////////
 
 function calcQuadrilhatero(base, altura) {
     let numeros = {
@@ -52,7 +52,7 @@ function paresImpares(arrayNumeros) {
     };
     for (let index = 0; index < arrayNumeros.length; index += 1) {
         if (arrayNumeros[index] % 2 === 0) {
-         numeros.pares.push(arrayNumeros[index]);
+            numeros.pares.push(arrayNumeros[index]);
         } else {
             numeros['ímpares'].push(arrayNumeros[index]);
         }
@@ -74,18 +74,18 @@ console.log(paresImpares([10, 18, 24, 21, 33, 8, 5, 57]));
 // verificaFimPalavra('joaofernando', 'fernan');
 // Retorno esperado: false;
 
- function verificaFimPalavra(word, ending) {
+function verificaFimPalavra(word, ending) {
     let resultado = word.split(ending);
-    if (resultado[resultado.length - 1] === ' '){
+    if (resultado[resultado.length - 1] === ' ') {
         console.log(resultado);
         return true;
     }
-        return false;
- }
+    return false;
+}
 
 console.log(verificaFimPalavra('trybe', 'be'));
 
-//////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 
 function meusNumeros(arrayNumeros) {
     for (let index = 0; index < arrayNumeros.length; index += 1) {
@@ -93,4 +93,33 @@ function meusNumeros(arrayNumeros) {
     }
 } console.log(meusNumeros([10, 13, 28, 73, 19]));
 
+///////////////////////////////////////////////////////
 
+function userInfo() {
+    let userEmail = 'maria@email.com';
+
+    // Toda expressão dentro do escopo da função userInfo tem acesso à variável userEmail
+    console.log(userEmail);
+}
+userInfo();
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+if (true) {
+    // inicio do escopo do if
+    var userAge = '20';
+    console.log(userAge); // 20
+    // fim do escopo do if
+}
+console.log(userAge); // 20
+
+
+/////////////////////////////////////////
+
+const soma = (num1, num2) => num1 + num2.
+    console.log(soma(2, 2) / 2);
+
+const contaPalavras = (frase) => frase.split(' ').length;
+console.log(contaPalavras('Além disso, podemos omitir os parênteses apenas em um cenário: quando a função recebe apenas um argumento, como podemos ver no exemplo abaixo:'));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
