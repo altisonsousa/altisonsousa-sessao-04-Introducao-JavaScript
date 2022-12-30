@@ -142,3 +142,62 @@ const  splitSentence  =  ( frase )  =>  frase.split ( ',' ) ; // separa as palav
 console.log( splitSentence( 'Hey, Ho, Lets Go' ));
 
 
+//CONTA QUANTAS VEZES O MAIOR NÚMERO SE REPETE EM UM ARRAY
+
+function maiorCount (array) {
+    let  hight = array [0];
+   let  repeat = 1;
+  
+   for  ( let  index = 1; index < array.length; index += 1 )  {
+
+     if (array[index] > hight) {
+       hight = array[index];
+       repeat = 1;
+   }  else if (array[index] === hight)  {
+       repeat += 1;
+     }
+   }
+   return repeat;
+ }
+ console.log( maiorCount ([ 9, 10, 10, 10, 9, 5, 1]));
+ 
+//Refactoring
+
+function maiorCount (array) {
+     let  hight = array [0];
+    let  repeat = 1;
+   
+    for  ( let  index = 1; index < array.length; index += 1 )  {
+
+      if (array[index] > hight) {
+        hight = array[index];
+        repeat = 1;
+    }  else if (array[index] === hight)  {
+        repeat += 1;
+      }
+    }
+    return `O maior valor é ${ hight } e repete ${ repeat } vezes.`;
+  }
+  
+  console.log( maiorCount ([ 9, 10, 11, 10, 9, 5, 1])); 
+
+//Refactoring Template Literal
+
+function maiorCount (array) {
+     let  hight = array [0];
+    let  repeat = 1;
+   
+    for  ( let  index = 1; index < array.length; index += 1 )  {
+
+      if (array[index] > hight) {
+        hight = array[index];
+        repeat = 1;
+    }  else if (array[index] === hight)  {
+        repeat += 1;
+      }
+    }
+    return repeat > 1 ? `O maior valor é ${ hight } e repete ${ repeat } vezes.` : `O maior valor é ${ hight } e repete ${ repeat } vez.` ;
+  }
+
+  console.log( maiorCount ([ 9, 10, 11, 10, 9, 5, 1])); 
+   
