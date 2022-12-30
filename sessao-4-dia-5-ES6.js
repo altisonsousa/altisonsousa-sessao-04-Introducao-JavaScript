@@ -24,7 +24,7 @@ const smartphone = {
     'Sansung Galaxy A53': 2200,
     'Nokia C01 Plus': 550,
 }
-smartphone ['iPhone 14 Pro'] = 10000;
+smartphone['iPhone 14 Pro'] = 10000;
 
 console.log(smartphone);
 
@@ -40,37 +40,105 @@ console.log(smartphone);
 
 // function simples
 
- function sum(num1, num2) {
+function sum(num1, num2) {
     return num1 + num2;
 }
 
-console.log(sum(2 , 8));
+console.log(sum(2, 8));
 
 // Arrow Function
-
 const sum = (num1, num2) => num1 + num2;
-console.log(sum(6,10));
+console.log(sum(6, 10));
 
 ////////////////////////////////
 
-const  sum  =  ( )  =>  console . log ( 'olá' ) ;
+const sum = () => console.log('olá');
 
-const  xablau  =  ( )  =>  { } ;
+const xablau = () => { };
 
 // 
 
 //TEMPLATE LITERAL
 //CRASE/ACENTO GRAVE - BACKTICK ``
 
-const  parOuOdd  =  ( numero )  =>  {
-    if ( numero  %  2  ===  0 ) {
-      return  'PAR' ;
-    }  else {
-      return  'ÍMPAR' ;
+const parOuOdd = (numero) => {
+    if (numero % 2 === 0) {
+        return 'PAR';
+    } else {
+        return 'ÍMPAR';
     }
-  }
-    let numero = 19;
-      console.log(`O número ${numero} é: ${parOuOdd(numero)}`);
-   // console.log('O numero ' + numero + ' é: ' + parOuOdd(numero));
-  
-  
+}
+let numero = 19;
+console.log(`O número ${numero} é: ${parOuOdd(numero)}`);
+// console.log('O numero ' + numero + ' é: ' + parOuOdd(numero));
+
+//////////////////////////////////////////////////////////////////
+
+//OPERADOR TERNÁRIO
+//BRASIL HEXA ? ****** : EU SOU MALUCO
+
+// if simples
+const evnOrOdd = (number) => {
+    if (number % 2 === 0) {
+        return 'PAR';
+    } else {
+        return "IMPAR";
+    }
+}
+let number = 60;
+console.log(evnOrOdd(number));
+
+//If Ooerador tenário
+const parOdd = (número) => número % 2 === 0 ? 'PAR' : 'IMPAR';
+
+let número = 741;
+
+console.log(`O número ${número} é: ${parOdd(número)}.`); /*Template Literal*/
+
+// = aribuição
+// == igualdade de valores
+// === igualdade de valores e tipos
+
+/////////////////////////////////////////////////////////////////
+
+//CALCULA A ÁREA DE UM TRIÂNGULO 
+
+// function simples
+function calcArea (base, autura) {
+    return (base + autura) / 2;
+}
+    console.log(calcArea(22, 44));
+
+
+//Refactoring para Arrow Function
+const calcArea = ( base , altura )  =>  ( base * altura ) /  2 ;
+
+console.log( calcArea ( 10 , 5 ) );
+//Refactoring para Arrow Function
+
+calcArea = ( base, autura )  => (base * autura) / 2 ;
+console.log( calcArea ( 10 , 5 ) );
+
+///////////////////////////////////////////////////////////////////
+
+//DIVIDA COMO PALAVRAS
+
+
+function splitSentence ( frase ) {
+    return frase.split(' '); // espaço em branco nos parentases é um caracter e ocupa espaço
+ } 
+   console.log(splitSentence ('DEUS É FIEL!'));
+
+
+   function splitSentence ( frase ) {
+    return frase.split('');  // separa as letras da frase com virgila
+ } 
+   console.log(splitSentence ('DEUS É FIEL!'))
+
+
+ //arrow  Function
+const  splitSentence  =  ( frase )  =>  frase.split ( ',' ) ; // separa as palavras da frase com virgula
+
+console.log( splitSentence( 'Hey, Ho, Lets Go' ));
+
+
